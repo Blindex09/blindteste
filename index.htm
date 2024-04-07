@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícias Acessíveis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Notícias Acessíveis</h1>
+    <nav>
+      <ul>
+        <li><a href="#carousel" class="nav-link">Ir para o Carrossel</a></li>
+        <li><a href="#footer" class="nav-link">Ir para o Rodapé</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="carousel" class="carousel-container">
+      <button class="carousel-btn prev-btn" aria-label="Notícia anterior">&lt;</button>
+      <div role="listbox" aria-live="polite" aria-label="Carrossel de Notícias" tabindex="0">
+        <section class="carousel-item">
+          <h2>Descoberta Científica</h2>
+          <p>Novo planeta descoberto na constelação de Orion.</p>
+        </section>
+        <section class="carousel-item">
+          <h2>Esporte</h2>
+          <p>Time local vence campeonato de futebol.</p>
+        </section>
+        <section class="carousel-item">
+          <h2>Tecnologia</h2>
+          <p>Nova versão do smartphone XYZ lançada com recursos inovadores.</p>
+        </section>
+        <section class="carousel-item">
+          <h2>Cultura</h2>
+          <p>Nova exposição de arte contemporânea aberta ao público.</p>
+        </section>
+      </div>
+      <button class="carousel-btn next-btn" aria-label="Próxima notícia">&gt;</button>
+    </section>
+    <div id="live-region" aria-live="assertive" style="display: none;"></div> <!-- Elemento para anunciar automaticamente as mudanças nas notícias -->
+    <button class="carousel-btn stop-btn" aria-label="Parar carrossel">Parar</button> <!-- Botão para parar o carrossel -->
+  </main>
+
+  <footer id="footer">
+    <p>&copy; 2024 Notícias Acessíveis</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
